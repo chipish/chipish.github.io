@@ -70,6 +70,9 @@
   padding-left:3%;
 }
 
+.links a:hover{color:red;}
+
+
 .Home
 { border-right: 2px solid grey;}
 .TheNorthernLights

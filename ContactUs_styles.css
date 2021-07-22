@@ -30,6 +30,8 @@ overflow: auto;
 }
 .contact h2{font-family: serif sans-serif;}
 
+.info a:hover{color:red;}
+
 
 
 .submit{
@@ -50,6 +52,7 @@ overflow: auto;
   padding-right: 3%;
   padding-left:3%;
 }
+.links a:hover{color:red;}
 
 .Home
 { border-right: 2px solid grey;}

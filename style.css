@@ -112,14 +112,19 @@ font-size: 12px;}
 
 }
 
-.UpcomingEvents a .visited:{
+.UpcomingEvents a:visited{
   color: grey;
 }
-
+.UpcomingEvents a:hover{
+  color:red;
+}
 .table{
   border: 2px solid black;
 }
 
+.ContactUs a:hover{
+    color:red;
+}
 
 .links{
  height:21%;
@@ -131,6 +136,8 @@ font-size: 12px;}
   padding-right: 3%;
   padding-left:3%;
 }
+
+.links a:hover{color:red;}
 
 .Home
 { border-right: 2px solid grey;}
