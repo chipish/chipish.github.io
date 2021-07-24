@@ -1,0 +1,172 @@
+
+.box1{
+  width:40%;
+  height:450px;
+  margin:2%;
+  border:2px solid red;
+  margin-left: 7.5%;
+  float:left;
+
+}
+
+.box2{
+  width:40%;
+  height:450px;
+  margin:2%;
+  border:2px solid red;
+  float:left;
+}
+
+.box1 img {
+  width:80%;
+  height:70%;
+  margin-left:9%;
+  margin-top:5%;
+ }
+
+.box2 img {
+  width:80%;
+  height:70%;
+  margin-left:9%;
+  margin-top:5%;
+}
+
+.link1 {text-align:center;
+}
+.red{
+  background-color: red;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.modalwindow{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(66, 230, 245,0.8);
+  opacity: 0;
+  pointer-events:none;
+
+  }
+.modalwindow:target {
+ pointer-events: auto;
+ animation: transition 1s forwards;
+ animation-timing-function: ease-in;
+}
+
+@keyframes transition{
+
+  0%{};
+  25%{ opacity:.25;}
+  50%{ opacity:.50;}
+  75%{ opacity:.75;}
+  100%{ opacity:1;}
+
+}
+
+.msgblock{
+  width: 50%;
+  height: 70%;
+  background-color: red;
+  margin: auto;
+  margin-top: 6%;
+  position: relative;
+  overflow:auto;
+}
+
+ .msgheader1{
+   width:80%;
+   margin:auto;
+   background-color: grey;
+   padding:1%;
+ }
+
+ .msgimg1 img{
+   width:70%;
+   height:55%;
+   margin-left:15.5%;
+
+ }
+
+
+.close1{
+  width:6%;
+  height:4%;
+  margin: auto;
+  background-color: darkblue;
+  text-align:center;
+ padding-top: .7%;
+}
+.close1 a{
+
+  text-decoration:none;
+  color: white;
+
+}
+
+
+
+
+.link2{text-align: center;
+}
+.gold{
+  background-color: gold;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.modalwindow2{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(102, 245, 66, 0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.modalwindow2:target {
+   pointer-events: auto;
+   animation: transition 1s forwards;
+   animation-timing-function: ease-in;
+  }
+
+  .msgheader2{
+    width:70%;
+    margin:auto;
+  }
+
+.msgblock2{
+  width: 50%;
+  height: 70%;
+  background-color: gold;
+  margin: auto;
+  margin-top: 6%;
+  position: relative;
+  overflow:auto;
+
+}
+.msgheader2{
+  width:70%;
+  margin:auto;
+}
+
+.msgimg2 img{
+  width:70%;
+  height:55%;
+  margin-left:15.5%;
+
+}
+
+.close2 img{
+  position:absolute;
+  left:97%;
+  bottom:96.1%;
+  width:3%;
+  height:4%;
+
+}
