@@ -1,0 +1,54 @@
+
+.container{
+  width:95%;
+  margin:auto;
+}
+
+.container .links a:hover{
+  color:white;
+  background-color: blue;
+
+}
+
+.container .links a{
+ border-radius: 50px;
+ margin-bottom: 2%;
+}
+
+.jumbotron .btn a{
+  color:white;
+}
+
+
+
+
+.jumbotron{
+  width:80%;
+}
+
+.jumbotron img{
+  margin-left: 2%;
+  width:50%;
+  height:50%;
+}
+
+
+
+.jumbotron button{
+  background-color: powderblue;
+  position: relative;
+  float:right;
+}
+
+.row-1 .col-sm-4 img{
+  border-radius: 150px;
+
+}
+
+.col-sm-4 .btn a{
+  color:white;
+}
+
+.penguins{
+  border: 1px solid grey;
+}
