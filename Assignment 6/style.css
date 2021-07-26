@@ -15,11 +15,6 @@
  margin-bottom: 2%;
 }
 
-.jumbotron .btn a{
-  color:white;
-}
-
-
 
 
 .jumbotron{
@@ -35,9 +30,11 @@
 
 
 .jumbotron button{
-  background-color: powderblue;
   position: relative;
   float:right;
+}
+.jumbotron .btn a{
+  color:white;
 }
 
 .row-1 .col-sm-4 img{
