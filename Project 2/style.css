@@ -1,0 +1,322 @@
+.page{
+  background-color: beige;
+  width:90%;
+  height:4000px;
+  margin:auto;
+}
+
+.flex-container-1{
+  display: flex;
+  width:90%;
+  height:6%;
+  margin: auto;
+  overflow: auto;
+
+ }
+
+
+.flex-item-1 img{
+  border: 5px solid green;
+  border-style: inset;
+  border-radius: 60px;
+  width:90%;
+  height:90%;
+}
+
+/* .flex-item-1{
+  animation-name: ball;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+} */
+/*
+ .flex-item-2{
+  animation-name: ball;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+} */
+
+
+/* @keyframes ball{
+
+  0%{}
+  25%{bottom:30%;}
+  50%{top:30%;}
+  75%{right:30%;}
+  100%{left:30%;}
+} */
+
+.flex-item-2 h1{
+  font-size: 55px;
+  font-style: italic;
+  color: green;
+}
+
+
+
+
+
+
+.row1-header{
+  text-align:center;
+  width: 90%;
+  margin: auto;
+  padding-top: 2%;
+  background-color: rgba(3, 252, 107);
+
+}
+
+.sale{
+  font-size: 20px;
+  font-weight:bold;
+  margin-right: 4%;
+
+}
+
+.row1{
+  border: 1px solid black;
+
+  width:90%;
+  height:15%;
+  margin: auto;
+  max height:28%;
+  background-image: url("images/intro_img2.jpg");
+  background-size: 100% 100%;
+
+}
+
+.row1 p{
+  height: auto;
+  width: 30%;
+  border: 4px solid white;
+  background-color: grey;
+  margin-left: 4%;
+  margin-top: 15%;
+  padding:2%;
+  overflow: auto;
+}
+
+
+
+
+
+.row2{
+  height:20%;
+  width:90%;
+  margin: auto;
+
+}
+
+.row2-img{
+  margin:4%;
+  margin-left: 5.5%;
+  width:40%;
+  height:80%;
+  border: 2px solid blue;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+   url("images/intro_img1.jpg");
+  background-size: 100% 100%;
+
+  float:left;
+}
+
+.img-p{
+  color:white;
+  height: 10%;
+  width:30%;
+  margin-left: 7%;
+}
+
+.row2-text{
+  text-align:center;
+  width:40%;
+  height:80%;
+  border: 2px solid blue;
+  background: linear-gradient(#e66465, #9198e5);
+
+  float:left;
+  margin:4%;
+}
+.row2-text h3,p{
+  padding-top: 20%;
+}
+.row2-text p{
+padding: 5%;
+}
+
+
+.lotion-header{
+  text-align: center;
+  color:green;
+}
+
+.row3{
+  border: 2px solid black;
+  height:15%;
+  width:90%;
+  margin: auto;
+  display:flex;
+}
+
+.row3 h4{
+  color:green;
+}
+.row3 img{
+  width:60%;
+  height:40%;
+}
+.row3-img-1{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.modalwindow1{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(247, 227, 198,0.8);
+  opacity: 0;
+  pointer-events:none;
+
+  }
+.modalwindow1:target {
+ pointer-events: auto;
+ opacity: 1;
+}
+
+.msgblock{
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  margin: auto;
+  margin-top: 6%;
+  position: relative;
+  overflow:auto;
+}
+
+.msgheader{
+  margin-left: 5%;
+}
+.msgimg img{
+  float:left;
+  width:40%;
+  height:40%;
+}
+
+
+.msgimg h4{
+  color:green;
+}
+
+.msgbtn{
+  height:20%;
+  background-color: grey;
+}
+
+.close img{
+  position:absolute;
+  left:97%;
+  bottom:96.1%;
+  width:3%;
+  height:4%;
+
+}
+
+.row3-img-2{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.row3-img-3{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+}
+
+
+.gift-header{
+  text-align: center;
+  color:green;
+  margin-top: 1%;
+}
+
+
+
+.row4{
+  border: 2px solid black;
+  height:15%;
+  width:90%;
+  margin:auto;
+  display:flex;
+}
+
+.row4 h4{
+  color:green;
+}
+
+.row4 img{
+  width:60%;
+  height:40%;
+}
+.row4-img-1{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+
+}
+
+.row4-img-2{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+
+}
+
+.row4-img-3{
+  width:33%;
+  border: 1px solid red;
+  text-align: center;
+
+}
+.bottom{
+  height:20%;
+  width:100%;
+  margin:auto;
+  background-color: black;
+  overflow: auto;
+
+
+}
+
+.links{
+  border-bottom:2px solid grey;
+
+  width:90%;
+  height:20%;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-content:space-around;
+  color:lightgrey;
+
+}
+
+.icons{
+  color:white;
+  text-align: right;
+  padding-right: 4%;
+}
+.icons img{
+  margin:1%;
+  width: 5%;
+  height:5%;
+}
+.bottom p{
+
+  text-align: center;
+  color:lightgrey;
+}
