@@ -170,6 +170,13 @@ padding: 5%;
 }
 
 
+.row3  :hover button{
+  background-color: blue;
+}
+
+
+
+
 
 .modalwindow{
   position: fixed;
@@ -242,14 +249,6 @@ padding: 5%;
   margin-top: 1%;
 }
 
-.popup{
-  text-align: center;
-  background-color: lightgrey;
-  height:10%;
-  width:60%;
-  margin-left: 20%;
-  display:none;
-}
 
 
 .row4{
@@ -273,6 +272,11 @@ padding: 5%;
   background-color: black;
   color:white;
 }
+
+.row4  :hover button{
+  background-color: blue;
+}
+
 
 .row4-img-1{
   width:33%;
