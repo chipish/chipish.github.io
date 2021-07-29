@@ -1,17 +1,15 @@
 .page{
   background-color: beige;
   width:90%;
-  height:4000px;
+  height:2800px;
   margin:auto;
 }
 
 .flex-container-1{
   display: flex;
   width:90%;
-  height:6%;
+  height:5%;
   margin: auto;
-  overflow: auto;
-
  }
 
 
@@ -35,8 +33,8 @@
   animation-iteration-count: 1;
 } */
 
-
-/* @keyframes ball{
+/*
+@keyframes ball{
 
   0%{}
   25%{bottom:30%;}
@@ -46,7 +44,7 @@
 } */
 
 .flex-item-2 h1{
-  font-size: 55px;
+  font-size: 45px;
   font-style: italic;
   color: green;
 }
@@ -62,7 +60,6 @@
   margin: auto;
   padding-top: 2%;
   background-color: rgba(3, 252, 107);
-
 }
 
 .sale{
@@ -76,9 +73,8 @@
   border: 1px solid black;
 
   width:90%;
-  height:15%;
+  height:20%;
   margin: auto;
-  max height:28%;
   background-image: url("images/intro_img2.jpg");
   background-size: 100% 100%;
 
@@ -100,7 +96,7 @@
 
 
 .row2{
-  height:20%;
+  height:15%;
   width:90%;
   margin: auto;
 
@@ -111,7 +107,6 @@
   margin-left: 5.5%;
   width:40%;
   height:80%;
-  border: 2px solid blue;
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
    url("images/intro_img1.jpg");
   background-size: 100% 100%;
@@ -130,7 +125,6 @@
   text-align:center;
   width:40%;
   height:80%;
-  border: 2px solid blue;
   background: linear-gradient(#e66465, #9198e5);
 
   float:left;
@@ -145,12 +139,12 @@ padding: 5%;
 
 
 .lotion-header{
+  display:block;
   text-align: center;
   color:green;
 }
 
 .row3{
-  border: 2px solid black;
   height:15%;
   width:90%;
   margin: auto;
@@ -166,7 +160,6 @@ padding: 5%;
 }
 .row3-img-1{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -226,13 +219,11 @@ padding: 5%;
 
 .row3-img-2{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 }
 
 .row3-img-3{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -246,7 +237,6 @@ padding: 5%;
 
 
 .row4{
-  border: 2px solid black;
   height:15%;
   width:90%;
   margin:auto;
@@ -263,26 +253,23 @@ padding: 5%;
 }
 .row4-img-1{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 
 }
 
 .row4-img-2{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 
 }
 
 .row4-img-3{
   width:33%;
-  border: 1px solid red;
   text-align: center;
 
 }
 .bottom{
-  height:20%;
+  height:30%;
   width:100%;
   margin:auto;
   background-color: black;
@@ -295,7 +282,7 @@ padding: 5%;
   border-bottom:2px solid grey;
 
   width:90%;
-  height:20%;
+  height:15%;
 
   margin: auto;
   display: flex;
