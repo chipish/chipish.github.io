@@ -163,7 +163,15 @@ padding: 5%;
   text-align: center;
 }
 
-.modalwindow1{
+
+.row3 button{
+  background-color: black;
+  color:white;
+}
+
+
+
+.modalwindow{
   position: fixed;
   top:0;
   bottom:0;
@@ -174,7 +182,7 @@ padding: 5%;
   pointer-events:none;
 
   }
-.modalwindow1:target {
+.modalwindow:target {
  pointer-events: auto;
  opacity: 1;
 }
@@ -234,6 +242,14 @@ padding: 5%;
   margin-top: 1%;
 }
 
+.popup{
+  text-align: center;
+  background-color: lightgrey;
+  height:10%;
+  width:60%;
+  margin-left: 20%;
+  display:none;
+}
 
 
 .row4{
@@ -243,6 +259,7 @@ padding: 5%;
   display:flex;
 }
 
+
 .row4 h4{
   color:green;
 }
@@ -251,11 +268,18 @@ padding: 5%;
   width:60%;
   height:40%;
 }
+
+.row4 button{
+  background-color: black;
+  color:white;
+}
+
 .row4-img-1{
   width:33%;
   text-align: center;
 
 }
+
 
 .row4-img-2{
   width:33%;
