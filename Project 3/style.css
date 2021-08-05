@@ -1,0 +1,121 @@
+
+.page{
+  width:100%;
+  height:900px;
+  background-image: linear-gradient(to right, purple , red);
+}
+
+.top{
+  margin: auto;
+  height:10%;
+  width:97%;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.hp{
+  color:white;
+}
+
+.header{
+  align-self: flex-end;
+
+}
+
+.header h3{
+  color:white;
+  position: relative;
+  right:35%;
+}
+
+.guessbox-container{
+  border-radius: 4px;
+  background-color: white;
+  width:5%;
+  text-align: center;
+  position:absolute;
+  right:45%;
+
+
+}
+
+.play-btn button{
+  background-color: blue;
+  color:white;
+  border: 1px outset white;
+  position: relative;
+  top:10%;
+}
+
+.center{
+  margin: auto;
+  width:97%;
+  height:50%;
+  display: flex;
+  justify-content: center;
+}
+
+.scoreboard{
+  height:50%;
+  width: 20%;
+  position: relative;
+  top:20%;
+  right:5%;
+  color:white;
+}
+
+.line1{
+  text-align:center;
+}
+
+.line2{
+  margin-left: 10%;
+}
+
+.scoreboard img{
+  float: left;
+  margin-right: 3%;
+  margin-left: 15%;
+}
+
+
+
+.history{
+  align-self: flex-end;
+  border: 2px solid white;
+  border-radius: 4px;
+  width:20%;
+  height:20%;
+  text-align: center;
+  color:white;
+  position: relative;
+  bottom: 20%;
+  right:2.5%;
+}
+
+.checker{
+   position:relative;
+   top:23%;
+   left:15%;
+   width:10%;
+   text-align: center;
+ }
+ .userInput{
+   background-color: transparent;
+   width:75%;
+   height:70px;
+   border: 1px solid white;
+   border-radius: 4px;
+   font-size:250%;
+   color: white;
+ }
+
+
+ .check{
+   background-color: blue;
+   color:white;
+   border: 1px outset white;
+
+
+ }
