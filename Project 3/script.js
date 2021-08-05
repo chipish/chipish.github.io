@@ -10,12 +10,12 @@ textElement.style.color = 'red';
 const changeMsg = function (msg) {
     textElement.textContent = msg;
 };
-//changeMsg('Invalid');
 
+const clickBtn = document.querySelector('.check');
 
-while(score>0){
+while(score >0){
 
-document.querySelector('.check').addEventListener('click', function(){
+clickBtn.addEventListener('click', function(){
     let inputUser1 = document.querySelector('.userInput').value;
 
     if (typeof(inputUser1) !=="number") {
@@ -26,6 +26,9 @@ document.querySelector('.check').addEventListener('click', function(){
         changeMsg('Please enter a number between 1 and 100!');
     }
 
+    else if (inputUser1 !== secretNumber){
+        changeMsg((inputUser1 > secretNumber) ? 'Too High' : 'Too Low');
+    }
     else if(inputUser1 === secretNumber){
         changeMsg('Congrats! You got the number');
 
@@ -34,20 +37,15 @@ document.querySelector('.check').addEventListener('click', function(){
         document.querySelector('.guessbox').value = secretNumber; 
         document.querySelector('.page').style.background = 'linear-gradient (to top right, blue, red)';
     }
+
+    else {
+        changeMsg('You lost the game!')
+        document.querySelector('.check').disabled = true;
+    }
 });
 
-if(score > highscore){
+if(score > highScore){
     highscore = score;
-}
-else if (inputUser1 !== secretNumber){
-    if (score > 0) { changeMsg((inputUser1 > secretNumber) ? 'Too High' : 'Too Low')}
-
-}
-
-else {
-    changeMsg('You lost the game!')
-    document.querySelector('.check').disabled = true;
-    break;
 }
 
     score--;
