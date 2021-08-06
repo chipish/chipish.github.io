@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Project 3 by Ismael Baker</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
             </div>
 
             <div>  
-              <button onclick="start()" id="play" class="play"> Play! </button>
+              <button onclick="start()" id="play" class="btn btn-primary btn-lg play"> Play! </button>
              
               </div>
 
@@ -33,7 +35,7 @@
 
           <div class="scoreboard">
             <div class="line1">
-              <p class="p1">Lets start Guessing...</p>
+              <p class="p1">Click play and let's start Guessing!</p>
                 </div>
                 <br><br>
             <div class="line2">
@@ -52,7 +54,7 @@
 
             <form>
               <input type="number" min="1" max="100" id="userInput" class="userInput" name="name"> 
-              <input type="submit" onclick="game()" value="Check!" id="check" class="check"> 
+              <input type="button" onclick="game()" value="Check!" id="check" class="check btn btn-primary btn-sm"> 
             </form>
 
       

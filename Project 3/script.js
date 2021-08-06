@@ -1,5 +1,3 @@
-let secretNumber = Math.trunc(Math.random()* 100)+ 1;
-console.log(secretNumber);
 
 let score = 10;
 let highScore = 0;
@@ -14,20 +12,33 @@ let changeMsg = function (msg) {
 let clickBtn = document.getElementById("check");
 let inputUser1 = document.getElementById("userInput");
 
-if (score < 1){
-    changeMsg('Game Over! You Lost!');
-    document.getElementById("check").disabled = true;
 
-}
+
+document.getElementById("check").disabled = true;
+document.getElementById("userInput").disabled = true;
 
 
 function start () {
     score = 10;
+    document.querySelector('.score').innerHTML = score;
     secretNumber = Math.trunc(Math.random() * 100) + 1;
+    console.log(secretNumber);
     changeMsg('Lets start Guessing...');
-    document.querySelector('.check').disabled = false;
 
-};
+    document.getElementById("check").disabled = false;
+    document.getElementById("userInput").disabled = false;
+    document.querySelector('.page').style.background = "linear-gradient(to right, purple , red)";
+    document.querySelector('.guessbox-container').style.background = 'blueviolet'; 
+    document.querySelector('.guessbox').innerHTML ='?';
+
+
+    }
+
+    clickBtn.click(function(event) {
+        event.preventDefault();
+    });
+
+
 
 function game (){
 
@@ -51,27 +62,35 @@ function game (){
     else if(inputUser1.value == secretNumber){
         changeMsg('Congrats! You got the number');
 
-        document.querySelector('.page').style.background = 'powderblue';
-        document.querySelector('.guess-container').style.background = 'red'; 
-        document.querySelector('.guessbox').value = secretNumber; 
-        document.querySelector('.page').style.background = 'linear-gradient (to top right, blue, red)';
+        document.querySelector('.page').style.background = 'linear-gradient (to top right, black, yellow)';
+        document.querySelector('.guessbox-container').style.background = 'red'; 
+        document.querySelector('.guessbox').innerHTML = secretNumber;
 
-        document.querySelector('.check').disabled = true;
-
+        document.getElementById("check").disabled = true;
+        document.getElementById("userInput").disabled = true;
     }
 
     else {
         changeMsg('Please enter a valid number!');
     }
+
+    if(score > highScore){
+        highScore = score;
+        document.querySelector('.score').innerHTML = score;
+        document.querySelector('.highscore').innerHTML = highScore;
+    }
+    
+    
+
+    if (score < 1){
+        changeMsg('Game Over! You Lost!');
+        document.getElementById("check").disabled = true;
+        document.getElementById("userInput").disabled = true;
+    }
 };
 
-if(score > highScore){
-    highscore = score;
-}
 
-
-    document.querySelector('.score').innerHTML = score;
-    document.querySelector('.highscore').innerHTML = highScore;
+   
 
 
 
