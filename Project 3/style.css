@@ -82,7 +82,7 @@
 
 .history{
   align-self: flex-end;
-  border: 2px solid white;
+  border: 2px groove white;
   border-radius: 4px;
   width:20%;
   height:20%;
@@ -90,7 +90,7 @@
   color:white;
   position: relative;
   bottom: 20%;
-  right:2.5%;
+  right:5%;
 }
 
 .checker{

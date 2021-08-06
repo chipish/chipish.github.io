@@ -58,11 +58,12 @@ function game (){
         score--;
         document.querySelector('.score').innerHTML = score;
 
+
     }
     else if(inputUser1.value == secretNumber){
         changeMsg('Congrats! You got the number');
 
-        document.querySelector('.page').style.background = 'linear-gradient (to top right, black, yellow)';
+        document.querySelector('.page').style.background = "linear-gradient(to top, black, yellow)";
         document.querySelector('.guessbox-container').style.background = 'red'; 
         document.querySelector('.guessbox').innerHTML = secretNumber;
 
