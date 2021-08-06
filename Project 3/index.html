@@ -20,9 +20,9 @@
             </div>
             </div>
 
-            <div>  <form>
-              <button type="submit" class="play"> Play! </button>
-              </form>
+            <div>  
+              <button onclick="start()" id="play" class="play"> Play! </button>
+             
               </div>
 
 
@@ -51,8 +51,8 @@
           <div class="checker">
 
             <form>
-              <input class="userInput"> 
-              <input type="submit" value="Check!" class="check"> 
+              <input type="number" min="1" max="100" id="userInput" class="userInput" name="name"> 
+              <input type="submit" onclick="game()" value="Check!" id="check" class="check"> 
             </form>
 
       

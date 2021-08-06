@@ -11,41 +11,44 @@ let changeMsg = function (msg) {
     message.textContent = msg;
 };
 
-let clickBtn = document.querySelector('.check');
-let inputUser1 = document.querySelector('.userInput');
+let clickBtn = document.getElementById("check");
+let inputUser1 = document.getElementById("userInput");
 
 if (score < 1){
     changeMsg('Game Over! You Lost!');
-    document.querySelector('.check').disabled = true;
+    document.getElementById("check").disabled = true;
 
 }
 
-clickBtn.addEventListener('click', function(){
-    
 
-    if (inputUser1 == '') {
+function start () {
+    score = 10;
+    secretNumber = Math.trunc(Math.random() * 100) + 1;
+    changeMsg('Lets start Guessing...');
+    document.querySelector('.check').disabled = false;
+
+};
+
+function game (){
+
+    if (inputUser1.value == '') {
         changeMsg('Please enter a valid number!');
     }
 
-    else if ((inputUser1 < 1 )|| (inputUser1 > 100)){
-        changeMsg('Please enter a number between 1 and 100!');
-        
-    }
-
-    else if (inputUser1 > secretNumber){
+    else if (inputUser1.value > secretNumber){
         changeMsg('Too High');
         score--;
         document.querySelector('.score').innerHTML = score;
 
     }
 
-    else if (inputUser1 < secretNumber){
+    else if (inputUser1.value < secretNumber){
         changeMsg('Too Low');
         score--;
         document.querySelector('.score').innerHTML = score;
 
     }
-    else if(inputUser1 === secretNumber){
+    else if(inputUser1.value == secretNumber){
         changeMsg('Congrats! You got the number');
 
         document.querySelector('.page').style.background = 'powderblue';
@@ -60,7 +63,7 @@ clickBtn.addEventListener('click', function(){
     else {
         changeMsg('Please enter a valid number!');
     }
-});
+};
 
 if(score > highScore){
     highscore = score;
@@ -72,11 +75,4 @@ if(score > highScore){
 
 
 
-document.querySelector('.play').addEventListener('click', function () {
 
-    score = 10;
-    secretNumber = Math.trunc(Math.random() * 100) + 1;
-    changeMsg('Lets start Guessing...');
-
-
-});
