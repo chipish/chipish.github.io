@@ -1,1 +1,0 @@
-# http://chipish.github.io
