@@ -1,0 +1,73 @@
+body{
+  background-image: url("images/photos/iceland2.jpg");
+  background-size: cover;
+}
+
+.info{
+  width:19%;
+  height:25%;
+margin-left: 10%;
+margin-top:9%;
+overflow: auto;
+float: left;
+}
+
+.logo1{
+  width:8%;
+}
+.logo2{
+  width:8%;
+}
+.logo3{
+  width:8%;
+}
+.contact{
+width:60%;
+margin:auto;
+margin-top:10%;
+margin-left: 40%;
+
+overflow: auto;
+
+}
+
+.contact h2,h4{
+}
+.contact h2{font-family: serif sans-serif;}
+
+.info a:hover{color:red;}
+
+
+
+.submit{
+  color:white;
+  background-color: black;
+}
+.submit:hover{color:red;}
+
+
+
+.links{
+ height:21%;
+ text-align: center;
+ font-size: 20px;
+ margin-top: 25%;
+
+}
+.links a{
+  padding-right: 3%;
+  padding-left:3%;
+  color: white;
+}
+.links a:hover{color:red;}
+
+.Home
+{ border-right: 2px solid grey;}
+.TheNorthernLights
+{ border-right: 2px solid grey;}
+.HikingOnGlaciers
+{ border-right: 2px solid grey;}
+
+.last{
+  color: grey;
+}
