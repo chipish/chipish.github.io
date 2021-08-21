@@ -36,8 +36,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: black;}
-
+:hover.dropbtn {background-color: black;}
 
 .order{
   position: relative;
