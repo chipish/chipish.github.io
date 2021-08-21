@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Aventador_SVJ.css">
+
+    <title> Aventador SVJ </title>
+  </head>
+  <body>
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="Aventador_SVJ.mp4" type="video/mp4">
+    </video>
+
+    <div class="dropdown">
+      <button class="dropbtn">Models</button>
+      <div class="dropdown-content">
+        <a href="Aventador_SVJ.html">Aventador SVJ</a>
+        <a href="Huracán_Evo.html" >Huracan EVO</a>
+        <a href="Urus.html" >Urus</a>
+      </div>
+    </div>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <h1>2021 Aventador SVJ</h1>
+      <p>Lamborghini created the Aventador SVJ to embrace challenges head-on, combining cutting-edge technology with extraordinary design,
+        while always refusing to compromise. In a future driven by technology, it’s easy to lose the genuine thrill of driving.
+        But in the future shaped by Lamborghini, this won’t be left behind, because there will always be a driver behind the wheel. </p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    // Get the video
+    let video = document.getElementById("myVideo");
+
+    // Get the button
+    let btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    myFunction =() => {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

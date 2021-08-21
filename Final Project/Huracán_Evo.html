@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Huracán_EVO.css">
+
+    <title> Huracán EVO </title>
+  </head>
+  <body>
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="Huracán_EVO.mp4" type="video/mp4">
+    </video>
+
+    <div class="dropdown">
+      <button class="dropbtn">Models</button>
+      <div class="dropdown-content">
+        <a href="Aventador_SVJ.html">Aventador SVJ</a>
+        <a href="Huracán_Evo.html" >Huracan EVO</a>
+        <a href="Urus.html" >Urus</a>
+      </div>
+    </div>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <h1>Huracán EVO</h1>
+      <p>The Huracán EVO is the evolution of the most successful V10-powered Lamborghini ever. The result of fine-tuning and refining existing features,
+         combined with new design solutions that increase performance, the car stands out for its ability to anticipate and cater to the driver’s behavior,
+         expectations and desires. </p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    // Get the video
+    let video = document.getElementById("myVideo");
+
+    // Get the button
+    let btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    myFunction =() => {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

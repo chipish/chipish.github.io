@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+
+    <title>Lamborghini 🏎️</title>
+</head>
+<body>
+    <video autoplay muted loop class="myVideo">
+        <source src="lambo.mp4" type="video/mp4">
+      </video>
+
+        <div class="dropdown">
+          <button class="dropbtn">Models</button>
+          <div class="dropdown-content">
+            <a href="Aventador_SVJ.html">Aventador SVJ</a>
+            <a href="Huracán_Evo.html" >Huracan EVO</a>
+            <a href="Urus.html" >Urus</a>
+          </div>
+        </div>
+
+      <div class="content">
+        <h1>Lamborghini</h1>
+        <p>Create your dream vehicle. Choose the model and specifications. We have a wide range
+            of colors and options!
+        </p>
+       <a href="#openWindow"> <button id="myBtn">Order Now</button></a>
+      </div>
+
+      <div class="window" id="openWindow">
+        <form action="{{url_for('thankyou')}}" method="POST" class="form1">
+          <h1 class="header"> LAMBORGHINI </h1>
+            <div class="painting1">
+                <img src="https://i.pinimg.com/originals/cc/9b/0e/cc9b0e2327dd2cbc13014bf45446e1f8.gif" alt="">
+            </div> <br> <br>
+            <input type="email" name="email_name" placeholder="Email"><br> <br>
+            <input type="text" name="full_name" class="full_name" placeholder="Enter your First & Last name"><br> <br>
+            <input type="text" name="model" class="model" placeholder="Aventador, Huracan, Urus"><br> <br>
+            <input type="text" name="color" class="color" placeholder="Exterior Color"> <br> <br>
+
+            <button type="submit" name="button" class="submit">Submit</button>
+            <br> <br>
+            <!-- <div class="painting">
+            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/08/Lamborghini-Urus-Vs-Aventador-Vs-Huracan.jpg" alt="">
+        </div> -->
+        </form>
+
+        <div id="slider">
+          <figure>
+          <a href="https://www.lamborghini.com/en-en/models/huracan" target="_blank">  <img src="images/Huracan1.jpg" title="Huracan"> </a>
+          <a href="https://www.lamborghini.com/en-en/models/aventador" target="_blank">  <img src="images/Aventador.jpg" title="Aventador"> </a>
+          <a href="https://www.lamborghini.com/en-en/models/huracan" target="_blank">   <img src="images/Huracan.jpg" title="Huracan"> </a>
+          <a href="https://www.lamborghini.com/en-en/models/urus" target="_blank">  <img src="images/urus1.jpg" title="urus"> </a>
+
+          </figure>
+        </div>
+
+      </div>
+
+
+</body>
+</html>
