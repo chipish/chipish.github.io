@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Huracán_Evo.css">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+
+    <title> Huracán EVO </title>
+  </head>
+  <body>
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="Huracán_Evo.mp4" type="video/mp4">
+    </video>
+
+    <a href="index.html"> <button class="dropbtn dropdown">Home</button> </a>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Models</button>
+      <div class="dropdown-content">
+        <a href="Aventador_SVJ.html">Aventador SVJ</a>
+        <a href="Huracán_Evo.html" >Huracan EVO</a>
+        <a href="Urus.html" >Urus</a>
+      </div>
+    </div>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content">
+      <h1>Huracán EVO</h1>
+      <p>The Huracán EVO is the evolution of the most successful V10-powered Lamborghini ever. The result of fine-tuning and refining existing features,
+         combined with new design solutions that increase performance, the car stands out for its ability to anticipate and cater to the driver’s behavior,
+         expectations and desires. </p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn2" onclick="myFunction()">Pause</button>
+    </div>
+
+    <div class="order">
+      <a href="#openWindow"> <button id="myBtn">Order Now</button></a>
+    </div>
+
+    <div class="window" id="openWindow">
+      <form action="{{url_for('thankyou')}}" method="POST" class="form1">
+        <h1 class="header"> LAMBORGHINI </h1>
+          <div class="painting1">
+              <img src="https://i.pinimg.com/originals/cc/9b/0e/cc9b0e2327dd2cbc13014bf45446e1f8.gif" alt="">
+          </div> <br> <br>
+          <input type="email" name="email_name" placeholder="Email"><br> <br>
+          <input type="text" name="full_name" class="full_name" placeholder="Enter your First & Last name"><br> <br>
+          <input type="text" name="model" class="model" placeholder="Aventador, Huracan, Urus"><br> <br>
+          <input type="text" name="color" class="color" placeholder="Exterior Color"> <br> <br>
+
+          <button type="submit" name="button" class="submit">Submit</button>
+          <br> <br>
+          <!-- <div class="painting">
+          <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/08/Lamborghini-Urus-Vs-Aventador-Vs-Huracan.jpg" alt="">
+      </div> -->
+      </form>
+
+      <div id="slider">
+        <figure>
+        <a href="https://www.lamborghini.com/en-en/models/huracan" target="_blank">  <img src="images/Huracan1.jpg" title="Huracan"> </a>
+        <a href="https://www.lamborghini.com/en-en/models/aventador" target="_blank">  <img src="images/Aventador.jpg" title="Aventador"> </a>
+        <a href="https://www.lamborghini.com/en-en/models/huracan" target="_blank">   <img src="images/Huracan.jpg" title="Huracan"> </a>
+        <a href="https://www.lamborghini.com/en-en/models/urus" target="_blank">  <img src="images/Urus1.jpg" title="Urus"> </a>
+
+        </figure>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    // Get the video
+    let video = document.getElementById("myVideo");
+
+    // Get the button
+    let btn = document.getElementById("myBtn2");
+
+    // Pause and play the video, and change the button text
+    myFunction =() => {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
