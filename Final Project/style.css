@@ -16,6 +16,8 @@
   font-family: 'Amita';
   font-size: 16px;
   border: none;
+  cursor: pointer;
+
 }
 
 .dropdown {
@@ -100,6 +102,23 @@
     animation: transition 1s forwards;
     animation-timing-function: ease-in;
   }
+
+  .close{
+    left:45%;
+    top: 2%;
+    position: relative;
+
+  }
+
+  .btn {
+    background-color: rgba(0,0,0,.3) ;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
 
   @keyframes transition{
     0%{};
